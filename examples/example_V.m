@@ -50,7 +50,7 @@ tree.addStimuli(1, sig);
 tree.addStimuli(2, sig);
 
 % Solve with custom mex solver
-[~, sol] = RK4CPP(tree, tmax, h);
+[~, sol] = treeSolver(tree, tmax, h);
 
 % plot soma response agins stimuli signal
 figure

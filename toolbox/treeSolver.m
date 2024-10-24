@@ -1,5 +1,5 @@
-function [t, solution] = RK4CPP(treeModel, tmax, h)
-    % RK4CPP Runs the RK4 simulation using the mex solver
+function [t, solution] = treeSolver(treeModel, tmax, h)
+    % treeSolver Runs the RK4 simulation using the mex solver
     %
     % Inputs:
     % - treeModel: DendriteTreeModel object

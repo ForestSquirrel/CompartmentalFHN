@@ -1,6 +1,9 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" ?>
 <Info>
     <Category UUID="FileClassCategory">
-        <Label UUID="derived"/>
+        <Label UUID="derived"></Label>
+    </Category>
+    <Category UUID="deccd74f-9959-4c44-88ea-5e1630238a82">
+        <Label UUID="96789b4a-0bb8-43ab-b70f-eb4f7569c302"></Label>
     </Category>
 </Info>

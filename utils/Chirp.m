@@ -1,5 +1,5 @@
-function [t, chirp_signal] = Chirp(A, tmax, fs, f0, f1, options)
-    % Generates a chirp signal based on the input parameters
+function [t, chirp_signal, f_t] = Chirp(A, tmax, fs, f0, f1, options)
+    % Generates a chirp signal and an array of frequencies based on the input parameters
     %
     % Arguments:
     %   A      - Amplitude of the signal (positive scalar)
@@ -13,7 +13,9 @@ function [t, chirp_signal] = Chirp(A, tmax, fs, f0, f1, options)
     %   signal - Base function ('sin', 'cos', 'square') (default: 'sin')
     %
     % Output:
+    %   t            - Time vector
     %   chirp_signal - Generated chirp signal array
+    %   f_t          - Frequency at each time point array
 
     arguments
         A (1, 1) {mustBePositive}
