@@ -1,5 +1,5 @@
 function [t, sig] = supraStep(Amplitude, Frequency, SamplingRate, NumPeriods, options)
-% GenerateWave Generates a parametrized square wave signal
+% Generates a parametrized square wave signal
 %
 % Arguments:
 %   Amplitude      - Amplitude of the wave (positive scalar)

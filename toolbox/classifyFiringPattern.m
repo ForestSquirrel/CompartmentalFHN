@@ -35,9 +35,9 @@ else
 end
 
 % coefficient for discharge
-discharge_coef = 10;
+discharge_coef = 7;
 % factor for stutering
-factor_stut = 5;
+factor_stut = 1.5;
 
 % Obtain response peaks
 [~, locs] = findpeaks(response, fs, "MinPeakHeight", MinPeakHeight);
