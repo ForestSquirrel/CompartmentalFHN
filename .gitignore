@@ -31,3 +31,5 @@ codegen/
 
 # Logs
 *.txt
+
+ mexVerify.mlx
