@@ -118,4 +118,5 @@ __host__ void sampEnCUDA(const double* h_timeSeries, int N, int m, double r_fact
     cudaFree(d_timeSeries);
     cudaFree(d_A);
     cudaFree(d_B);
+    delete[] h_timeSeries;
 }

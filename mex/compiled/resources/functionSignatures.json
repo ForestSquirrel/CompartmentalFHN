@@ -1,0 +1,31 @@
+{
+    "_schemaVersion": "1.0.0",
+    "sampleEntropy_cuda":
+    {
+       "inputs":
+       [
+          {"name":"data", "kind":"required", "type":["numeric"], "purpose":"Data vector"},
+          {"name":"eDim", "kind":"required", "type":["numeric"], "purpose":"Embeding dimmension size"},
+          {"name":"r", "kind":"required", "type":["numeric"], "purpose":"r_factor such that tolerance = r_factor*std(data)"}
+       ]
+    },
+    "approximateEntropy_cuda":
+    {
+       "inputs":
+       [
+          {"name":"data", "kind":"required", "type":["numeric"], "purpose":"Data vector"},
+          {"name":"eDim", "kind":"required", "type":["numeric"], "purpose":"Embedding dimension size"},
+          {"name":"r", "kind":"required", "type":["numeric"], "purpose":"r_factor such that tolerance = r_factor*std(data)"}
+       ]
+    },
+  "crossApproximateEntropy_cuda":
+    {
+       "inputs":
+       [
+          {"name":"dataX", "kind":"required", "type":["numeric"], "purpose":"First data vector"},
+          {"name":"dataY", "kind":"required", "type":["numeric"], "purpose":"Second data vector"},
+          {"name":"eDim", "kind":"required", "type":["numeric"], "purpose":"Embedding dimension size"},
+          {"name":"r", "kind":"required", "type":["numeric"], "purpose":"r_factor such that tolerance = r_factor*std(concat(dataX, dataY))"}
+       ]
+    }
+  }
